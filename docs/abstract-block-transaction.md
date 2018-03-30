@@ -14,13 +14,14 @@
 ## Transaction
 ```json
 {
+	"ID": "string => hash of transaction (hash of output + none)",
 	"Block": "number => block height",
 	"Nonce": "number => none number of the traction",
 	"Target": "number => target of difficulty",
 	"Input": [
 		{
-			Block: "number => block height of UTXO (unspent transaction output)",
-			ID: "string => ID (hash) of UTXO"
+			"Block": "number => block height of UTXO (unspent transaction output)",
+			"ID": "string => ID (hash) of UTXO"
 		}
 	],
 	"Output": [
